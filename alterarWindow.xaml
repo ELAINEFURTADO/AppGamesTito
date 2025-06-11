@@ -1,0 +1,52 @@
+﻿<Window x:Class="AppGamesTito.alterarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppGamesTito"
+        mc:Ignorable="d"
+       Title="Window4" Height="400" Width="400">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!--txt Usuario email-->
+        <TextBlock Grid.Row="0"
+                   Text="Usuario | Email"
+                   />
+        <TextBox Grid.Row="1"
+                 Height="30"
+                 Margin="0,0,0,0"/>
+        <TextBlock Grid.Row="2"
+                   Text="Senha"/>
+        <TextBox Grid.Row="3"
+                 Height="30"/>
+        <TextBlock Grid.Row="4"
+                   Text="Confirmar Senha"/>
+        <TextBox Grid.Row="5"
+                 Height="30"/>
+        <Button Grid.Row="6"
+                x:Name="bntAlterar"
+                Height="30"
+                Content="Alterar" 
+                Click="bntAlterar_Click"
+                />
+        <StackPanel Grid.Row="7"
+                    HorizontalAlignment="Center"
+                    Margin="0,15,0,0">
+            <TextBlock><Hyperlink Click="alogin">
+                Voltar para o login
+            </Hyperlink>
+
+            </TextBlock>
+
+        </StackPanel>
+    </Grid>
+</Window>
