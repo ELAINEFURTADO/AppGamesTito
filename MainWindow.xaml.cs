@@ -58,6 +58,9 @@ namespace AppGamesTito
             public int idUsuario { get; set; }
             public string nickName { get; set; }
             public string email { get; set; }
+            public int idStatus { get; set; }
+            public int idAcl { get; set; }
+            public string senha { get; set; }
         }
 
 public MainWindow()
